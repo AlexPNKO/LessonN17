@@ -21,6 +21,7 @@
         border-collapse: collapse;
       }
       tr {
+        height: 40px;
       }
       th,
       td {
@@ -28,47 +29,68 @@
         text-align: right;
         border: 1px solid black;
       }
+      div {
+        overflow-x: auto;
+      }
+      tbody > tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+      tbody > tr:hover {
+        background-color: #aaa;
+        color: white;
+      }
+      thead {
+        background-color: aqua;
+      }
+      tfoot {
+        font-weight: 700;
+      }
+      caption {
+        margin-bottom: 8px;
+      }
     </style>
   </head>
   <body>
-    <table>
-      <caption>
-        Shopping list
-      </caption>
-      <thead>
-        <tr>
-          <th>Product</th>
-          <th>Amount</th>
-          <th>Price</th>
-          <th>Subtotal</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Milk</td>
-          <td>3</td>
-          <td>$2</td>
-          <td>$6</td>
-        </tr>
-        <tr>
-          <td>Bread</td>
-          <td>4</td>
-          <td>$1</td>
-          <td>$4</td>
-        </tr>
-        <tr>
-          <td>Meat</td>
-          <td>5</td>
-          <td>$10</td>
-          <td>$50</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="3">Total</td>
-          <td>$60</td>
-        </tr>
-      </tfoot>
-    </table>
+    <div>
+      <table>
+        <caption>
+          Shopping list
+        </caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Milk</td>
+            <td>3</td>
+            <td>$2</td>
+            <td>$6</td>
+          </tr>
+          <tr>
+            <td>Bread</td>
+            <td>4</td>
+            <td>$1</td>
+            <td>$4</td>
+          </tr>
+          <tr>
+            <td>Meat</td>
+            <td>5</td>
+            <td>$10</td>
+            <td>$50</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total</td>
+            <td>$60</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
   </body>
 </html>
